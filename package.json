@@ -4,7 +4,10 @@
   "description": "E-commerce site using mern personal project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPEMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server",
+    "seeder": "node backend/utils/seeder.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,16 @@
   },
   "homepage": "https://github.com/venture1606/E-Commerce-Site-Project#readme",
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bootstrap": "^5.3.3",
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
-    "mongoose": "^8.1.1"
+    "mongoose": "^8.2.0",
+    "nodemon": "^3.0.3",
+    "react-router": "^6.22.3",
+    "react-router-dom": "^6.22.3",
+    "reactstrap": "^9.2.2",
+    "router": "^1.3.8"
   }
 }
